@@ -1,0 +1,48 @@
+=============== Write At => 19-01-17 06:48:26 =============== 
+url => https://apis-test.narnoo.com/api/v1/booking/create
+
+=============== Write At => 19-01-17 06:48:26 =============== 
+["Authorization:bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpcy5uYXJub28uY29tXC8iLCJpYXQiOjE1NDc2MzM0MDYsImV4cCI6MTU3OTE2OTQwNiwiaWQiOiIzMyIsInR5cGUiOjJ9.NHk3aQorpnF_mzrUjh3izaYsQUJB-vQSjKHJnj-yYZo","Content-Type: application\/json","cache-control: no-cache"]
+
+=============== Write At => 19-01-17 06:48:26 =============== 
+ before make booking call request values => {"contact":{"First Name":"aj","Last Name":"coder","Phone":"aj.coder55@gmail.com","Email":"9876543210","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"payment":{"type":"CREDITCARD","currency":"USD"},"products":[{"productId":579,"bookingCode":"WT:579:TT","bookingDate":"2019-01-19","paymentMethod":"FULL_SUPPLIER","option":[{"id":906440,"label":"ADULT","quantity":1,"price":125}],"participants":[[{"label":"First Name","value":"aj"},{"label":"Last Name","value":"coder"},{"label":"Country","value":"australia"}]],"bookingForm":[{"label":null,"value":null}]}]}
+
+=============== Write At => 19-01-17 06:48:30 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"EF62udQl2dnNRnl","data":{"contact":{"First Name":"aj","Last Name":"coder","Phone":"aj.coder55@gmail.com","Email":"9876543210","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"reservationProductName":"Test Product - Not for purchase - TEST","bookingDate":"19-Jan-2019","error":true,"errorMessage":"EBooking attempt failed  for Test Product - Not for purchase - TEST ADULT. Error: Allocation of 0 for 19-Jan-2019 is not enough. Booking MUST be made manually with Supplier.","manualConfirmation":true,"confirmed":false,"reservationCode":2027572,"productId":"579","productBookingCode":"WT:579:TT","reservationPaymentOption":"FULL_SUPPLIER","reservationProvider":"Website Travel"}],"bookingCount":1,"reservationQueryTime":"2175.72ms","success":true,"timestamp":"2019-01-17T17:48:29+11:00","cacheTime":null},"queryTime":"2573.91ms"}
+
+=============== Write At => 19-01-17 06:51:01 =============== 
+url => https://apis-test.narnoo.com/api/v1/booking/create
+
+=============== Write At => 19-01-17 06:51:01 =============== 
+["Authorization:bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpcy5uYXJub28uY29tXC8iLCJpYXQiOjE1NDc2MzM0MDYsImV4cCI6MTU3OTE2OTQwNiwiaWQiOiIzMyIsInR5cGUiOjJ9.NHk3aQorpnF_mzrUjh3izaYsQUJB-vQSjKHJnj-yYZo","Content-Type: application\/json","cache-control: no-cache"]
+
+=============== Write At => 19-01-17 06:51:01 =============== 
+ before make booking call request values => {"contact":{"First Name":"aj","Last Name":"coder","Phone":"aj.coder55@gmail.com","Email":"9876543210","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"payment":{"type":"CREDITCARD","currency":"USD"},"products":[{"productId":579,"bookingCode":"WT:579:TT","bookingDate":"2019-01-19","paymentMethod":"FULL_SUPPLIER","option":[{"id":906440,"label":"ADULT","quantity":1,"price":125}],"participants":[[{"label":"First Name","value":"aj"},{"label":"Last Name","value":"coder"},{"label":"Country","value":"australia"}]],"bookingForm":[{"label":null,"value":null}]}]}
+
+=============== Write At => 19-01-17 06:51:05 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"OhXRvAtaEAH3sz2","data":{"contact":{"First Name":"aj","Last Name":"coder","Phone":"aj.coder55@gmail.com","Email":"9876543210","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"reservationProductName":"Test Product - Not for purchase - TEST","bookingDate":"19-Jan-2019","error":true,"errorMessage":"EBooking attempt failed  for Test Product - Not for purchase - TEST ADULT. Error: Allocation of 0 for 19-Jan-2019 is not enough. Booking MUST be made manually with Supplier.","manualConfirmation":true,"confirmed":false,"reservationCode":2027573,"productId":"579","productBookingCode":"WT:579:TT","reservationPaymentOption":"FULL_SUPPLIER","reservationProvider":"Website Travel"}],"bookingCount":1,"reservationQueryTime":"2254.95ms","success":true,"timestamp":"2019-01-17T17:51:04+11:00","cacheTime":null},"queryTime":"2652.23ms"}
+
+=============== Write At => 19-01-17 06:56:14 =============== 
+ after make booking call response values => {"success":false,"message":"Error calling gateway","queryTime":"1264.88ms"}
+
+=============== Write At => 19-01-17 07:07:37 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"XkmZRQKYfCB49TL","data":{"contact":{"First Name":"aj","Last Name":"coder","Phone":"9876543210","Email":"aj.coder55@gmail.com","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"reservationProductName":null,"bookingDate":"24-Jan-2019","confirmed":true,"reservationCode":2027574,"productId":"579","productBookingCode":"WT:579:TT","reservationPaymentOption":"FULL_SUPPLIER","reservationProvider":"Website Travel"}],"bookingCount":1,"reservationQueryTime":"2364.12ms","success":true,"timestamp":"2019-01-17T18:07:36+11:00","cacheTime":null},"queryTime":"2841.54ms"}
+
+=============== Write At => 19-01-17 07:14:27 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"lhn3bEVVDSdDWap","data":{"contact":{"First Name":"aj","Last Name":"coder","Phone":"9876543210","Email":"aj.coder55@gmail.com","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"reservationProductName":null,"bookingDate":"24-Jan-2019","confirmed":true,"reservationCode":2027575,"productId":"579","productBookingCode":"WT:579:TT","reservationPaymentOption":"FULL_SUPPLIER","reservationProvider":"Website Travel"}],"bookingCount":1,"reservationQueryTime":"2484.36ms","success":true,"timestamp":"2019-01-17T18:14:26+11:00","cacheTime":null},"queryTime":"2886.02ms"}
+
+=============== Write At => 19-01-17 07:19:45 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"GSgCqLif2lnGsJW","data":{"contact":{"First Name":"aj","Last Name":"coder","Phone":"9876543210","Email":"aj.coder55@gmail.com","State":"queensland","Postcode":"123456","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"reservationProductName":null,"bookingDate":"24-Jan-2019","confirmed":true,"reservationCode":2027576,"productId":"579","productBookingCode":"WT:579:TT","reservationPaymentOption":"FULL_SUPPLIER","reservationProvider":"Website Travel"}],"bookingCount":1,"reservationQueryTime":"2369.1ms","success":true,"timestamp":"2019-01-17T18:19:43+11:00","cacheTime":null},"queryTime":"2795.39ms"}
+
+=============== Write At => 19-05-29 10:01:53 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2956.79ms"}
+
+=============== Write At => 19-06-04 12:58:47 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1735.42ms"}
+
+=============== Write At => 19-06-04 13:10:35 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1763.21ms"}
+
+=============== Write At => 19-06-05 12:12:27 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2236.01ms"}
+
