@@ -356,6 +356,8 @@ class NCM_Narnoo_Helper {
         $contact = ( isset($data['contact']) && !empty($data['contact']) ) ? $data['contact'] : array();
 
         $payment = ( isset($data['payment']) && !empty($data['payment']) ) ? $data['payment'] : array();
+        
+        $booking_info = ( isset($data['booking_info']) && !empty($data['booking_info']) ) ? $data['booking_info'] : array();
 
         $products = ( isset($data['products']) && !empty($data['products']) ) ? $data['products'] : array();
 
@@ -487,17 +489,19 @@ class NCM_Narnoo_Helper {
 
             $product_data['bookingDate'] = $product['narnoo_bdate'];
 
-            $product_data['paymentMethod'] = 'FULL_SUPPLIER';
+            $product_data['paymentMethod'] = 'FULL_AGENT';
 
             $product_data['option'] = $options;
 
             $product_data['participants'] = $participants;
 
-            $product_data['bookingForm'] = array( array( "label" => null, "value" => null) );
+            //$product_data['bookingForm'] = array( array( "label" => null, "value" => null) );
+            $product_data['bookingForm'] = $booking_info;
 
 
 
             $products_data[] = $product_data;
+           // print_r($products_data); exit();
 
         }
 
@@ -537,7 +541,7 @@ class NCM_Narnoo_Helper {
         // $ncm->ncm_write_log( " before make booking call request values => " . json_encode( $post_data ) );
 
 
-
+        //print_r($post_data); exit();
         $this->post_data = json_encode( $post_data );
 
         

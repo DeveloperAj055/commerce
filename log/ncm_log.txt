@@ -46,3 +46,72 @@ url => https://apis-test.narnoo.com/api/v1/booking/create
 =============== Write At => 19-06-05 12:12:27 =============== 
  after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2236.01ms"}
 
+=============== Write At => 19-06-06 06:48:13 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2271.69ms"}
+
+=============== Write At => 19-06-06 07:47:32 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1837.27ms"}
+
+=============== Write At => 19-06-06 07:55:17 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1797.13ms"}
+
+=============== Write At => 19-06-07 07:26:59 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"3150.4ms"}
+
+=============== Write At => 19-06-07 07:38:03 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1648.16ms"}
+
+=============== Write At => 19-06-07 07:48:25 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2130.34ms"}
+
+=============== Write At => 19-06-07 08:01:21 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1909.86ms"}
+
+=============== Write At => 19-06-07 08:05:51 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"2005.37ms"}
+
+=============== Write At => 19-06-07 08:48:13 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1547.77ms"}
+
+=============== Write At => 19-06-07 08:54:04 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1758.04ms"}
+
+=============== Write At => 19-06-07 10:10:52 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1636.67ms"}
+
+=============== Write At => 19-06-07 10:29:06 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1920.05ms"}
+
+=============== Write At => 19-06-07 10:34:04 =============== 
+ after make booking call response values => {"success":false,"message":"Error with booking details via the gateway","queryTime":"1591.3ms"}
+
+=============== Write At => 19-06-08 07:48:54 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"ZtiaelGXHW2oEka","data":{"contact":{"firstName":"Web","lastName":"Dev","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":326776,"bookingDate":"11-06-2019","productBookingCode":"RP:15:44:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1429.58ms","success":true,"timestamp":"2019-06-08T18:48:51+11:00","cacheTime":null},"queryTime":"2073.93ms"}
+
+=============== Write At => 19-06-08 08:31:33 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"5dxeJ28m3MOTVVB","data":{"contact":{"firstName":"Web","lastName":"Dev","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","country":"Australia","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":880381,"bookingDate":"11-06-2019","productBookingCode":"RP:16:41:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1327.15ms","success":true,"timestamp":"2019-06-08T19:31:31+11:00","cacheTime":null},"queryTime":"1956.22ms"}
+
+=============== Write At => 19-06-08 09:21:32 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"pXzJETWaQutLAwQ","data":{"contact":{"firstName":"Demo","lastName":"Demo Web","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","country":"Australia","I agree to the terms and conditions of travel":"I"},"booking":[{"error":true,"msg":"Booking not confirmed - please follow up manually","errorDetails":["Insufficient pickup information provided for a compulsory pickup tour."],"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","productId":589,"order":{"productId":589,"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","paymentMethod":"FULL_AGENT","productOptions":[{"id":1,"label":"Adult","quantity":1,"price":49},{"id":3,"label":"Child","quantity":1,"price":49}],"participants":[[{"label":"First Name","value":"First Adult"},{"label":"Last Name","value":"Last Adult"}],[{"label":"First Name","value":"First Child"},{"label":"Last Name","value":"Last Child"}]],"bookingForm":{"1":{"value":"Demo","label":"First Name"},"2":{"value":"Demo Web","label":"Last Name"},"3":{"value":"1234567890","label":"Phone\/Mobile"},"4":{"value":"aj.coder55@gmail.com","label":"Email"},"5":{"value":"Avon","label":"State"},"6":{"value":"2574","label":"Postcode\/Zip"},"7":{"value":"AU","label":"Country"},"8":{"value":"I","label":"I agree to the terms and conditions of travel"}}}}],"bookingCount":1,"reservationQueryTime":"935.81ms","success":true,"timestamp":"2019-06-08T20:21:29+11:00","cacheTime":null},"queryTime":"1419.94ms"}
+
+=============== Write At => 19-06-08 09:43:59 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"lla8i67ra3aWwUW","data":{"contact":{"firstName":"Demo","lastName":"Demo W","phone":"123456789","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"error":true,"msg":"Booking not confirmed - please follow up manually","errorDetails":["Insufficient pickup information provided for a compulsory pickup tour."],"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","productId":589,"order":{"productId":589,"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","paymentMethod":"FULL_AGENT","productOptions":[{"id":1,"label":"Adult","quantity":1,"price":49}],"participants":[[{"label":"First Name","value":"First Name Adult"},{"label":"Last Name","value":"Last Name Adult"}]],"bookingForm":[{"label":null,"value":null}]}}],"bookingCount":1,"reservationQueryTime":"1012.78ms","success":true,"timestamp":"2019-06-08T20:43:56+11:00","cacheTime":null},"queryTime":"1746.12ms"}
+
+=============== Write At => 19-06-08 09:53:56 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"cUuIv7XIioAG9FA","data":{"contact":{"First Name":"Test","Last Name":"Test","Phone\/Mobile":"1234567890","Email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"Australia","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":649724,"bookingDate":"11-06-2019","productBookingCode":"RP:15:44:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1384.45ms","success":true,"timestamp":"2019-06-08T20:53:54+11:00","cacheTime":null},"queryTime":"1986.04ms"}
+
+=============== Write At => 19-06-08 10:47:30 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"uh9MfrUBHhdsfBM","data":{"contact":{"First Name":"Test","Last Name":"Demo","Phone\/Mobile":"1234567890","Email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":282355,"bookingDate":"11-06-2019","productBookingCode":"RP:15:44:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1021.41ms","success":true,"timestamp":"2019-06-08T21:47:28+11:00","cacheTime":null},"queryTime":"1583.07ms"}
+
+=============== Write At => 19-06-08 13:10:03 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"M7NlMUwqCQSPz56","data":{"contact":{"First Name":"Web","Last Name":"Dev","Phone\/Mobile":"1234567890","Email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"error":true,"msg":"Booking not confirmed - please follow up manually","errorDetails":["Insufficient pickup information provided for a compulsory pickup tour."],"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","productId":589,"order":{"productId":589,"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","paymentMethod":"FULL_AGENT","productOptions":[{"id":1,"label":"Adult","quantity":1,"price":49}],"participants":[[{"label":"First Name","value":"Last Adult"},{"label":"Last Name","value":"Last Adult"}]],"bookingForm":[{"label":null,"value":null}]}},{"error":true,"msg":"Booking not confirmed - please follow up manually","errorDetails":["Insufficient pickup information provided for a compulsory pickup tour."],"bookingCode":"RP:8:6:50","bookingDate":"10-06-2019","productId":589,"order":{"productId":589,"bookingCode":"RP:8:6:50","bookingDate":"10-06-2019","paymentMethod":"FULL_AGENT","productOptions":[{"id":3,"label":"Child","quantity":1,"price":49}],"participants":[[{"label":"First Name","value":"First Name"},{"label":"Last Name","value":"First Name"}]],"bookingForm":[{"label":null,"value":null}]}}],"bookingCount":2,"reservationQueryTime":"1660.54ms","success":true,"timestamp":"2019-06-09T00:10:01+11:00","cacheTime":null},"queryTime":"2304.25ms"}
+
+=============== Write At => 19-06-10 05:55:34 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"oPeKG2r6ynQSwcH","data":{"contact":{"firstName":"Web","lastName":"Developer","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","Country":"AU","I agree to the terms and conditions of travel":"I"},"booking":[{"error":true,"msg":"Booking not confirmed - please follow up manually","errorDetails":["Insufficient pickup information provided for a compulsory pickup tour."],"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","productId":589,"order":{"productId":589,"bookingCode":"RP:8:6:50","bookingDate":"11-06-2019","paymentMethod":"FULL_AGENT","productOptions":[{"id":1,"label":"Adult","quantity":1,"price":49}],"participants":[[{"label":"First Name","value":"First Name Adult"},{"label":"Last Name","value":"Last Name Adult"}]],"bookingForm":{"1":{"value":"Web","label":"First Name"},"2":{"value":"Developer","label":"Last Name"},"3":{"value":"1234567890","label":"Phone\/Mobile"},"4":{"value":"aj.coder55@gmail.com","label":"Email"},"5":{"value":"Avon","label":"State"},"6":{"value":"2574","label":"Postcode\/Zip"},"7":{"value":"AU","label":"Country"},"8":{"value":"I","label":"I agree to the terms and conditions of travel"}}}}],"bookingCount":1,"reservationQueryTime":"1173.98ms","success":true,"timestamp":"2019-06-10T16:55:31+11:00","cacheTime":null},"queryTime":"1836.53ms"}
+
+=============== Write At => 19-06-10 07:06:24 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"P53hEdZ7ZYMdqu8","data":{"contact":{"firstName":"Web","lastName":"Developer","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","country":"Australia","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":632841,"bookingDate":"13-06-2019","productBookingCode":"RP:15:44:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1063.2ms","success":true,"timestamp":"2019-06-10T18:06:22+11:00","cacheTime":null},"queryTime":"1681.99ms"}
+
+=============== Write At => 19-06-10 07:21:14 =============== 
+ after make booking call response values => {"success":true,"uniqueId":"n1CLWyRAE5dGLAq","data":{"contact":{"firstName":"Web","lastName":"Developer","phone":"1234567890","email":"aj.coder55@gmail.com","State":"Avon","Postcode\/Zip":"2574","country":"Australia","I agree to the terms and conditions of travel":"I"},"booking":[{"confirmed":true,"reservationCode":958918,"bookingDate":"13-06-2019","productBookingCode":"RP:15:44:5","productId":496,"reservationProductName":null,"reservationPaymentOption":"full-agent","reservationProvider":"Respax"}],"bookingCount":1,"reservationQueryTime":"1777.02ms","success":true,"timestamp":"2019-06-10T18:21:12+11:00","cacheTime":null},"queryTime":"2279.82ms"}
+

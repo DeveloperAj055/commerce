@@ -34,7 +34,7 @@
 
 
 
-                <?php /*<th><span class="ncm_dropoff"><?php _e('Dropoff Location', NCM_txt_domain); ?></span></th>*/ ?>
+                <?php /*<th><span class="ncm_dropoff"><?php _e('Dropoff Location', NCM_txt_domain); ?></span></th> */?>
 
 
 
@@ -86,7 +86,7 @@
 
 
 
-    <h3><?php _e("Passanger Information", NCM_txt_domain); ?></h3>
+    <h3><?php _e("Passenger Information", NCM_txt_domain); ?></h3>
 
 
 
