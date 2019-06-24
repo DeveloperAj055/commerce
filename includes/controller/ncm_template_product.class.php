@@ -64,15 +64,18 @@ if( !class_exists ( 'NCM_Template_Product' ) ) {
                 $productTimes_arr = isset($bookingdata->productTimes) ? $bookingdata->productTimes : '';
 
                 if(count($productTimes_arr) > 1){
-                    echo '<div class="ncm_product_time_select">';
-                        echo '<label class="ncm-label">Pick Product Time</label>';
-                        echo '<select name="pruduct_time" id="pruduct_time">';
-                        foreach($productTimes_arr as $time){
-                            echo '<option value="'.$time->id.'">'.$time->time.'</option>';
+                    $productTimesID = '';
+                    foreach($productTimes_arr as $time){
+                        if($time->default == 1 ){
+                            $productTimesID .= isset($time->id) ? ':'.$time->id : ':TT';
                         }
-                        echo '</select>';
+                    }
+                    //echo $productTimesID;
+                    if(!empty($productTimesID)){
+                        $productTimes = $productTimesID;
+                    }else{
                         $productTimes = isset($productTimes_arr[0]->id) ? ':'.$productTimes_arr[0]->id : ':TT';
-                    echo '<div>';
+                    }
                 }else{
                     $productTimes = isset($productTimes_arr[0]->id) ? ':'.$productTimes_arr[0]->id : ':TT';    
                 }

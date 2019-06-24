@@ -1,6 +1,15 @@
 <?php global $post, $ncm_product;  ?>
 
+<?php 
+//echo '<pre>';
+//print_r($post); 
 
+/*if( isset( $post->narnoo_data->bookingData ) ) {
+    $bookingdata = $post->narnoo_data->bookingData;
+    $productTimes_arr = isset($bookingdata->productTimes) ? $bookingdata->productTimes : '';
+    print_r($productTimes_arr);
+}*/
+?>
 
 <p class="price">
 
@@ -10,7 +19,29 @@
 
 </p>
 
+<?php 
+if( isset( $post->narnoo_data->bookingData ) ) {
 
+$bookingdata = $post->narnoo_data->bookingData;
+$productTimes_arr = isset($bookingdata->productTimes) ? $bookingdata->productTimes : '';
+
+    if(count($productTimes_arr) > 1){ ?>
+        <div class="ncm_product_time_select">
+            <label class="ncm-label">Pick Product Time</label>
+            <select name="pruduct_time" id="pruduct_time">
+            <?php  foreach($productTimes_arr as $time){ 
+                if($time->default == 1 ){
+                    $selected = "selected='selected'";
+                }else{
+                    $selected = "";
+                } ?>
+                <option value="<?php echo $time->id ?>" <?php echo $selected;?> ><?php echo $time->time ?></option>
+            <?php  } ?>
+            </select>
+        <div>
+    <?php }
+}
+?>
 
 <?php do_action( 'ncm_display_availability' ); ?>
 
@@ -112,14 +143,14 @@ jQuery(document).ready(function($) {
     
     var getHidVal = jQuery('#ncm_bookingCodes').val();
     var getHidFinal = getHidVal.split(":");
-    console.log(getHidFinal);
+    //console.log(getHidFinal);
 
     jQuery('#pruduct_time').on('change', function (e){
         var selectTime =  jQuery(this).val();
         getHidFinal.pop();
         getHidFinal.push(selectTime);
         var inputVal = getHidFinal.join(":");
-        console.log(inputVal);
+        //console.log(inputVal);
         jQuery('#ncm_bookingCodes').val(inputVal);
     });
 

@@ -16,6 +16,7 @@
                     <?php 
                         $products = new WP_Query( array('posts_per_page'=>12,
                             'post_type'=>'narnoo_product',
+                            'post_status' => 'publish',
                             'paged' => get_query_var('paged') ? get_query_var('paged') : 1) 
                         ); 
                         while ( $products->have_posts() ) : $products->the_post(); ?>
