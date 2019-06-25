@@ -585,7 +585,6 @@ class NCM_Cart{
         }
 
 
-
         if( !empty($pickups) ) {
 
             foreach( $pickups as $pickup_id => $pickup ) {
