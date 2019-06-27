@@ -763,6 +763,7 @@ jQuery(document).on("click", "#ncm_select_date", function() {
 
 
 jQuery(document).on("change", ".ncm_pickup_location", function() {
+    //console.log('Yes');
 
     var pickup       = jQuery(this).val();
 
@@ -771,6 +772,15 @@ jQuery(document).on("change", ".ncm_pickup_location", function() {
     var booking_date = jQuery(this).attr("data-ncm_booking_date");
 
     ncm_add_to_cart( post_id, booking_date, '', '', pickup, '', '' );
+
+    //var PickLocationPrice = jQuery(this).attr("data-pick-price");
+    
+    var PickLocationPrice = jQuery('option:selected', this).attr('data-pick-price');
+    //console.log(PickLocationPrice);
+
+    jQuery(".ncm_pickup_location").attr("data-ncm_pick_loc_price", PickLocationPrice);
+
+    ncm_calculate_price();
 
 });
 
@@ -819,6 +829,7 @@ jQuery(document).on("change", ".ncm_passenger", function() {
         }
 
     });
+
 
     ncm_add_to_cart( ncm_post_id, ncm_booking_date, '', '', '', '', JSON.stringify(passenger) );
 
@@ -1268,6 +1279,9 @@ function ncm_calculate_price() {
 
         var products = [];
 
+        var picklocprice = jQuery('.ncm_pickup_location').attr("data-ncm_pick_loc_price");
+        console.log(picklocprice);
+
         jQuery("select.ncm_passenger").each( function () {
 
             var select = jQuery(this);
@@ -1327,6 +1341,8 @@ function ncm_calculate_price() {
                 'ncm_cart_row_id' : ncm_cart_row_id,
 
                 'ncm_passenger_fields' : ncm_passenger_fields,
+
+                'ncm_pick_loc_price' : picklocprice,                
 
             });
 

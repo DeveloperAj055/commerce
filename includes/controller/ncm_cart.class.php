@@ -106,6 +106,8 @@ class NCM_Cart{
 
                 $pax = isset($product['pax']) ? $product['pax'] : 1;
 
+                $pick_loc_price = isset($product['ncm_pick_loc_price']) ? $product['ncm_pick_loc_price'] : 0;
+
                 $commission = isset($product['commission']) ? $product['commission'] : 0;
 
                 $product_subtotal_id = isset($product['product_subtotal_id']) ? $this->ncm_string_to_div_class( $product['product_subtotal_id'] ) : 0;
@@ -128,23 +130,43 @@ class NCM_Cart{
 
                 $product_levy = '0'; // $levy * $passenger;
 
-                $product_price = $price * $passenger;
+                //if($pick_loc_price > 0 && !empty($pick_loc_price)){
 
-                $product_total = $product_levy + $product_price;
+                    //$pax_passenger = $pax * $passenger;
+                    
+                    //$picloc = $pick_loc_price * $pax_passenger;
 
+                    //$product_price = $price + $picloc;
+                    
+                    /*$product_price1 = $price * $passenger;
+
+                    $product_price = $product_price1 + $pick_loc_price;
+
+                    $product_total = $product_levy + $product_price; */                   
+                    
+                //}else{
+
+                    $product_price = $price * $passenger;
+
+                    $product_total = $product_levy + $product_price;
+                //}
 
 
                 // For sub total amount
 
                 if( !empty( $product_sub_arr ) && in_array( $product_subtotal_id, $product_sub_arr ) ) {
 
-                    $subtotal = $ncm_calculate[$product_subtotal_id]['amount'] + $product_price;
+                    $picloc = $pick_loc_price * $passenger;
+
+                    $subtotal = $ncm_calculate[$product_subtotal_id]['amount'] + $product_price + $picloc;
 
                     $ncm_calculate[$product_subtotal_id] = array('amount' => $subtotal, 'subtotal' => $ncm_settings->ncm_display_price($subtotal) );
 
                 } else {
 
-                    $subtotal = $product_price;
+                    $picloc = $pick_loc_price * $passenger;
+
+                    $subtotal = $product_price + $picloc;
 
                     $ncm_calculate[$product_subtotal_id] = array('amount' => $subtotal, 'subtotal' => $ncm_settings->ncm_display_price($subtotal) );
 
@@ -182,13 +204,17 @@ class NCM_Cart{
 
                 if( !empty( $product_arr ) && in_array( $product_total_id, $product_arr ) ) {
 
-                    $total = $ncm_calculate[$product_total_id]['amount'] + $product_total;
+                    $picloc = $pick_loc_price * $passenger;
+
+                    $total = $ncm_calculate[$product_total_id]['amount'] + $product_total + $picloc;
 
                     $ncm_calculate[$product_total_id] = array('amount' => $total, 'subtotal' => $ncm_settings->ncm_display_price($total) );
 
                 } else {
 
-                    $total = $product_total;
+                    $picloc = $pick_loc_price * $passenger;
+
+                    $total = $product_total + $picloc;
 
                     $ncm_calculate[$product_total_id] = array('amount' => $total, 'subtotal' => $ncm_settings->ncm_display_price($total) );
 
@@ -595,7 +621,10 @@ class NCM_Cart{
 
                     $label = ( isset($pickup['label']) && !empty($pickup['label']) ) ? $pickup['label'] : $id;
 
-                    $pickup_location[$id] = $label;
+                    $price = ( isset($pickup['price']) && !empty($pickup['price']) ) ? $pickup['price'] : $price;
+
+                    //$pickup_location[$id] = $label;
+                    $pickup_location[$id] = array($label, $price);
 
                 //}
 
@@ -1145,6 +1174,8 @@ class NCM_Cart{
 
                     $ncm_data_val = '';
 
+                    $pick_loc_price = "";
+
                     $pickup_location_value = $ncm_controls->ncm_control(
 
                                 array(
@@ -1164,6 +1195,8 @@ class NCM_Cart{
                                     "data-ncm_post_id" => $post_id,
 
                                     "data-ncm_booking_date" => $booking_date,
+
+                                    "data-ncm_pick_loc_price" => $pick_loc_price,
 
                                     "data-error_required" => __("Please select pickup location.", NCM_txt_domain),
 
